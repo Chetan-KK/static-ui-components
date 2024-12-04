@@ -331,7 +331,7 @@ const ComponentsWrapper = () => {
       <div>{selectedComponent}</div>
       <SecondaryButton
         className="fixed right-2  top-2 z-30"
-        onClick={() => {
+        onPress={() => {
           setIsNavOpen((prev) => !prev);
         }}
       >
@@ -350,7 +350,7 @@ const ComponentsWrapper = () => {
                   <div>
                     <SecondaryButton
                       className="w-full justify-between"
-                      onClick={() => toggleCollapse(comp.name)}
+                      onPress={() => toggleCollapse(comp.name)}
                     >
                       {comp.name} <Down className="size-6" />
                     </SecondaryButton>
@@ -360,7 +360,7 @@ const ComponentsWrapper = () => {
                           <SecondaryButton
                             className="w-full  !justify-start"
                             key={subIndex}
-                            onClick={() =>
+                            onPress={() =>
                               setSelectedComponent(subComp.component)
                             }
                           >
@@ -373,7 +373,7 @@ const ComponentsWrapper = () => {
                 ) : (
                   <SecondaryButton
                     className="w-full !justify-start"
-                    onClick={() => setSelectedComponent(comp.component)}
+                    onPress={() => setSelectedComponent(comp.component)}
                   >
                     {comp.name}
                   </SecondaryButton>
