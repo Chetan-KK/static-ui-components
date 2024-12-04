@@ -7,7 +7,7 @@ import SecondaryButton from "./SecondaryButton";
 const ModeToggle = () => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <SecondaryButton onClick={toggleTheme}>
+    <SecondaryButton onPress={toggleTheme}>
       {theme === "light" ? (
         <Moon className="size-5" />
       ) : (

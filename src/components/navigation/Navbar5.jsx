@@ -80,7 +80,7 @@ const Navbar5 = () => {
         <div className="flex gap-2 justify-end">
           <SecondaryButton
             className="md:hidden z-30"
-            onClick={() => {
+            onPress={() => {
               setIsNavOpen((prev) => !prev);
             }}
           >

@@ -82,7 +82,7 @@ const Navbar4 = () => {
           <Button>Login</Button>
           <SecondaryButton
             className="md:hidden z-30"
-            onClick={() => {
+            onPress={() => {
               setIsNavOpen((prev) => !prev);
             }}
           >

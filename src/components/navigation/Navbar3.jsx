@@ -84,7 +84,7 @@ const Navbar3 = () => {
           <User />
           <SecondaryButton
             className="md:hidden z-30"
-            onClick={() => {
+            onPress={() => {
               setIsNavOpen((prev) => !prev);
             }}
           >
