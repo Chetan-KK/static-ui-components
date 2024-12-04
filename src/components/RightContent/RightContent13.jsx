@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import SecondaryButton from "../utils/SecondaryButton";
 
 const RightContent13 = () => {
+  const [input, setInput] = useState(
+    "Make podcasts, audio notes, and AI voice-overs for quick and viral content."
+  );
+
   return (
     <div className="py-10">
       <div className="lg:container mx-auto p-2 my-7 md:px-20 md:my-16 grid grid-cols-1 lg:grid-cols-[auto_1fr] items-start justify-items-center md:justify-items-end gap-10 sm:gap-20">
@@ -15,9 +19,8 @@ const RightContent13 = () => {
           <input
             className="absolute bottom-2 left-[50%] translate-x-[-50%] w-auto sm:w-96 bg-white dark:bg-black border border-[#f0f0f0] dark:border-[#252528] text-sm sm:text-base rounded-full px-3 py-2 sm:px-4 sm:py-2 font-semibold shadow-[#005cf0]/20 shadow-sm hover:bg-[#f0f0f0] dark:hover:bg-[#252528] transition-all"
             type="text"
-            value={
-              "Make podcasts, audio notes, and AI voice-overs for quick and viral content."
-            }
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
           />
         </div>
         <div className="space-y-5  sm:w-auto">

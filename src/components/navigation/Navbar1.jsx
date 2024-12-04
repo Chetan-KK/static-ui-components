@@ -55,7 +55,7 @@ const Navbar1 = () => {
           }}
         ></div>
         <nav
-          className={`flex fixed md:static top-0 left-0 md:bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent p-5 md:w-auto w-[80%] md:p-0 h-screen md:h-auto border-r border-[#f0f0f0] dark:border-[#252528] md:border-none flex-col justify-start md:flex-row gap-5 md:translate-x-0 transition-transform z-30 ${
+          className={`flex fixed md:static top-0 left-0 bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent p-5 md:w-auto w-[80%] md:p-0 h-screen md:h-auto border-r border-[#f0f0f0] dark:border-[#252528] md:border-none flex-col justify-start md:flex-row gap-5 md:translate-x-0 transition-transform z-30 ${
             isNavOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >

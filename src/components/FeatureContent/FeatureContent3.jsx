@@ -3,47 +3,39 @@ import SectionHeading from "../utils/SectionHeading";
 import CircleIcon from "../utils/CircleIcon";
 import Sun from "../../assets/icons/Sun";
 
-const FeatureContent2 = () => {
+const FeatureContent3 = () => {
   const contents = [
     {
       Icon: Sun,
       heaidng: "odio elementum",
-      subHeading: "Egestas sagittis ipsum habitant at diam.",
     },
     {
       Icon: Sun,
       heaidng: "odio elementum",
-      subHeading: "Egestas sagittis ipsum habitant at diam.",
     },
     {
       Icon: Sun,
       heaidng: "odio elementum",
-      subHeading: "Egestas sagittis ipsum habitant at diam.",
     },
     {
       Icon: Sun,
       heaidng: "odio elementum",
-      subHeading: "Egestas sagittis ipsum habitant at diam.",
     },
     {
       Icon: Sun,
       heaidng: "odio elementum",
-      subHeading: "Egestas sagittis ipsum habitant at diam.",
     },
     {
       Icon: Sun,
       heaidng: "odio elementum",
-      subHeading: "Egestas sagittis ipsum habitant at diam.",
     },
     {
       Icon: Sun,
       heaidng: "odio elementum",
-      subHeading: "Egestas sagittis ipsum habitant at diam.",
     },
     {
       Icon: Sun,
       heaidng: "odio elementum",
-      subHeading: "Egestas sagittis ipsum habitant at diam.",
     },
   ];
 
@@ -62,9 +54,6 @@ const FeatureContent2 = () => {
           >
             <CircleIcon size={35} Icon={content.Icon} color="darkblue" />
             <h1 className="text-lg sm:text-2xl font-bold">{content.heaidng}</h1>
-            <p className="text-sm sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
-              {content.subHeading}
-            </p>
           </div>
         ))}
       </div>
@@ -72,4 +61,4 @@ const FeatureContent2 = () => {
   );
 };
 
-export default FeatureContent2;
+export default FeatureContent3;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SecondaryButton from "./utils/SecondaryButton";
 import Down from "../assets/icons/Down";
 import HamburgerMenu from "../assets/icons/HamburgerMenu";
@@ -48,21 +48,14 @@ import RightContent12 from "./RightContent/RightContent12";
 import RightContent13 from "./RightContent/RightContent13";
 import RightContent14 from "./RightContent/RightContent14";
 import FeatureContent1 from "./FeatureContent/FeatureContent1";
+import FeatureContent2 from "./FeatureContent/FeatureContent2";
+import FeatureContent3 from "./FeatureContent/FeatureContent3";
+import FeatureContent4 from "./FeatureContent/FeatureContent4";
+import FeatureContent5 from "./FeatureContent/FeatureContent5";
+import FeatureContent6 from "./FeatureContent/FeatureContent6";
+import FeatureContent7 from "./FeatureContent/FeatureContent7";
 
 const ComponentsWrapper = () => {
-  const [selectedComponent, setSelectedComponent] = useState(null);
-  const [collapsed, setCollapsed] = useState({
-    navbars: true,
-    "center contents": true,
-    "left contents": true,
-    "Right contents": true,
-  });
-  const [isNavOpen, setIsNavOpen] = useState(false);
-
-  const toggleCollapse = (name) => {
-    setCollapsed((prev) => ({ ...prev, [name]: !prev[name] }));
-  };
-
   const allComponents = [
     {
       name: "navbars",
@@ -322,15 +315,89 @@ const ComponentsWrapper = () => {
           type: "component",
           component: <FeatureContent1 />,
         },
+        {
+          name: "Feature Content 2",
+          type: "component",
+          component: <FeatureContent2 />,
+        },
+        {
+          name: "Feature Content 3",
+          type: "component",
+          component: <FeatureContent3 />,
+        },
+        {
+          name: "Feature Content 4",
+          type: "component",
+          component: <FeatureContent4 />,
+        },
+        {
+          name: "Feature Content 5",
+          type: "component",
+          component: <FeatureContent5 />,
+        },
+        {
+          name: "Feature Content 6",
+          type: "component",
+          component: <FeatureContent6 />,
+        },
+        {
+          name: "Feature Content 7",
+          type: "component",
+          component: <FeatureContent7 />,
+        },
       ],
     },
   ];
+
+  const [selectedComponent, setSelectedComponent] = useState(null);
+  const [selectedComponentName, setSelectedComponentName] = useState(null);
+  const [collapsed, setCollapsed] = useState({
+    navbars: true,
+    "center contents": true,
+    "left contents": true,
+    "Right contents": true,
+  });
+
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  useEffect(() => {
+    const savedComponentIndex = localStorage.getItem("selectedComponentIndex");
+    const savedComponentSubIndex = localStorage.getItem(
+      "selectedComponentSubIndex"
+    );
+    if (savedComponentIndex && savedComponentSubIndex) {
+      setSelectedComponent(
+        allComponents[savedComponentIndex].components[savedComponentSubIndex]
+          .component
+      );
+      setSelectedComponentName(
+        allComponents[savedComponentIndex].components[savedComponentSubIndex]
+          .name
+      );
+    } else {
+      setSelectedComponent(allComponents[0].components[0].component);
+      setSelectedComponentName(allComponents[0].components[0].name);
+    }
+  }, []);
+
+  const toggleCollapse = (name) => {
+    setCollapsed((prev) => ({ ...prev, [name]: !prev[name] }));
+  };
+
+  const handleComponentSelect = (index, subIndex, Name) => {
+    setSelectedComponent(allComponents[index].components[subIndex].component);
+    setSelectedComponentName(Name);
+    localStorage.setItem("selectedComponentIndex", index);
+    localStorage.setItem("selectedComponentSubIndex", subIndex);
+  };
 
   return (
     <div className="">
       <div>{selectedComponent}</div>
       <SecondaryButton
-        className="fixed right-2  top-2 z-30"
+        className={`fixed ${
+          isNavOpen ? "right-60" : "right-2"
+        } top-[30%] rounded-r-none z-30`}
         onPress={() => {
           setIsNavOpen((prev) => !prev);
         }}
@@ -341,48 +408,55 @@ const ComponentsWrapper = () => {
           <HamburgerMenu className="text-black dark:text-white size-5" />
         )}
       </SecondaryButton>
-      {isNavOpen && (
-        <div className="fixed top-0 right-0 border-l border-[#f0f0f0] dark:border-[#252528] bg-white dark:bg-black p-2 h-screen overflow-y-auto pt-16">
-          <ul className="space-y-4">
-            {allComponents.map((comp, index) => (
-              <li key={index}>
-                {comp.type === "dropdown" ? (
-                  <div>
-                    <SecondaryButton
-                      className="w-full justify-between"
-                      onPress={() => toggleCollapse(comp.name)}
-                    >
-                      {comp.name} <Down className="size-6" />
-                    </SecondaryButton>
-                    {!collapsed[comp.name] && (
-                      <ul className="space-y-2 ml-4 mt-2">
-                        {comp.components.map((subComp, subIndex) => (
-                          <SecondaryButton
-                            className="w-full  !justify-start"
-                            key={subIndex}
-                            onPress={() =>
-                              setSelectedComponent(subComp.component)
-                            }
-                          >
-                            {subComp.name}
-                          </SecondaryButton>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ) : (
+      <div
+        className={`fixed w-60 top-0 right-0 border-l border-[#f0f0f0] dark:border-[#252528] bg-white dark:bg-black p-2 h-screen overflow-y-auto pt-16 ${
+          isNavOpen ? " right-0" : " right-[-100%]"
+        } transition-all`}
+      >
+        <ul className="space-y-4">
+          {allComponents.map((comp, index) => (
+            <li key={index}>
+              {comp.type === "dropdown" ? (
+                <div>
                   <SecondaryButton
-                    className="w-full !justify-start"
-                    onPress={() => setSelectedComponent(comp.component)}
+                    className="w-full justify-between "
+                    onPress={() => toggleCollapse(comp.name)}
                   >
-                    {comp.name}
+                    {comp.name} <Down className="size-6" />
                   </SecondaryButton>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+                  {!collapsed[comp.name] && (
+                    <ul className="space-y-2 ml-4 mt-2">
+                      {comp.components.map((subComp, subIndex) => (
+                        <SecondaryButton
+                          className={`w-full  !justify-start ${
+                            selectedComponentName === subComp.name &&
+                            " !bg-[#005cf0]"
+                          }`}
+                          key={subIndex}
+                          onPress={() =>
+                            handleComponentSelect(index, subIndex, subComp.name)
+                          }
+                        >
+                          {subComp.name}
+                        </SecondaryButton>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ) : (
+                <SecondaryButton
+                  className="w-full !justify-start"
+                  onPress={() =>
+                    handleComponentSelect(index, subIndex, subComp.name)
+                  }
+                >
+                  {comp.name}
+                </SecondaryButton>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
