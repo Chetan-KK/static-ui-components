@@ -7,35 +7,35 @@ const FeatureContent3 = () => {
   const contents = [
     {
       Icon: Sun,
-      heaidng: "odio elementum",
+      heading: "odio elementum",
     },
     {
       Icon: Sun,
-      heaidng: "odio elementum",
+      heading: "odio elementum",
     },
     {
       Icon: Sun,
-      heaidng: "odio elementum",
+      heading: "odio elementum",
     },
     {
       Icon: Sun,
-      heaidng: "odio elementum",
+      heading: "odio elementum",
     },
     {
       Icon: Sun,
-      heaidng: "odio elementum",
+      heading: "odio elementum",
     },
     {
       Icon: Sun,
-      heaidng: "odio elementum",
+      heading: "odio elementum",
     },
     {
       Icon: Sun,
-      heaidng: "odio elementum",
+      heading: "odio elementum",
     },
     {
       Icon: Sun,
-      heaidng: "odio elementum",
+      heading: "odio elementum",
     },
   ];
 
@@ -53,7 +53,7 @@ const FeatureContent3 = () => {
             className="flex flex-col gap-3 text-center items-center justify-center"
           >
             <CircleIcon size={35} Icon={content.Icon} color="darkblue" />
-            <h1 className="text-lg sm:text-2xl font-bold">{content.heaidng}</h1>
+            <h1 className="text-lg sm:text-2xl font-bold">{content.heading}</h1>
           </div>
         ))}
       </div>

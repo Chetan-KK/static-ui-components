@@ -1,71 +1,77 @@
-import React from "react";
-import SectionHeading from "../utils/SectionHeading";
+import React, { useState } from "react";
 import CircleIcon from "../utils/CircleIcon";
-import Sun from "../../assets/icons/Sun";
+import UserIcon from "../../assets/icons/UserIcon";
+import SectionHeading from "../utils/SectionHeading";
+
+const contentData = [
+  {
+    title: "Text to Voice",
+    icon: UserIcon,
+    description:
+      "Build voice experiences for virtual assistants, audiobooks, podcasts, e-learning, and video games.",
+  },
+  {
+    title: "Voice Cloning",
+    icon: UserIcon,
+    description:
+      "Clone voices as short as 30 seconds and translate into multiple languages.",
+  },
+  {
+    title: "Voice Changer",
+    icon: UserIcon,
+    description:
+      "Mimic identities and create voices of your favourite personalities. Alter or maintain original pitch. Switch between male and female voices.",
+  },
+  {
+    title: "Voice Changer",
+    icon: UserIcon,
+    description:
+      "Mimic identities and create voices of your favourite personalities. Alter or maintain original pitch. Switch between male and female voices.",
+  },
+  {
+    title: "Voice Changer",
+    icon: UserIcon,
+    description:
+      "Mimic identities and create voices of your favourite personalities. Alter or maintain original pitch. Switch between male and female voices.",
+  },
+];
 
 const FeatureContent6 = () => {
-  const contents = [
-    {
-      Icon: Sun,
-      heaidng: "Et, odio elementum",
-      subHeading:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus",
-    },
-    {
-      Icon: Sun,
-      heaidng: "Et, odio elementum",
-      subHeading:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus",
-    },
-    {
-      Icon: Sun,
-      heaidng: "Et, odio elementum",
-      subHeading:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus",
-    },
-    {
-      Icon: Sun,
-      heaidng: "Et, odio elementum",
-      subHeading:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus",
-    },
-    {
-      Icon: Sun,
-      heaidng: "Et, odio elementum",
-      subHeading:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus",
-    },
-    {
-      Icon: Sun,
-      heaidng: "Et, odio elementum",
-      subHeading:
-        "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus",
-    },
-  ];
-
   return (
     <div className="py-10">
-      <SectionHeading
-        heading="Etiam nulla lectus amet nunc molestie at vulputate."
-        subHeading="Neque, pulvinar vestibulum non aliquam."
-      />
-      <div className="container mx-auto my-16 grid grid-cols-1 sm:grid-cols-3 p-2 sm:p-5 place-items-center gap-5 sm:gap-y-10 lg:px-20">
-        {contents.map((content, _) => (
-          <div
-            key={_}
-            className="flex border border-[#f0f0f0] dark:border-[#252528] p-5 rounded-xl hover:shadow-[#005cf0]/30 shadow-lg flex-col gap-3 items-start transition-all duration-500"
-          >
-            <CircleIcon size={25} Icon={content.Icon} color="darkblue" />
-            <div className="space-y-3">
-              <h1 className="text-lg sm:text-2xl font-bold">
-                {content.heaidng}
-              </h1>
-              <p className="text-sm sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
-                {content.subHeading}
-              </p>
+      <div className="lg:container mx-auto p-4 my-7 md:px-20 md:my-16 grid grid-cols-1 lg:grid-cols-2 items-center justify-items-center md:justify-items-end gap-5">
+        <div className="">
+          <SectionHeading
+            className={"!text-left !p-0"}
+            heading="Etiam nulla lectus amet nunc molestie at vulputate."
+            subHeading="Neque, pulvinar vestibulum non aliquam."
+          />
+          <img
+            src="/dummyImgLight.png"
+            className="w-[90vw] h-auto md:w-auto md:h-[35rem] object-cover rounded-xl"
+            alt="hero image"
+          />
+        </div>
+        <div className="w-[90vw] space-y-7 h-full sm:w-auto">
+          {contentData.map((content, index) => (
+            <div
+              key={index}
+              className={`p-3 sm:min-w-96 flex  gap-2
+                  my-2 hover:translate-x-2 transition-all
+                  `}
+            >
+              <div className="flex justify-center items-center size-10 sm:size-14 rounded-full text-base sm:text-xl bg-[#005cf0] aspect-square text-white">
+                {index + 1}
+              </div>
+              <div>
+                <h1 className="font-bold  sm:text-xl">{content.title}</h1>
+                <p className="text-[#4d4d4d] text-xs sm:text-base dark:text-[#ababab]">
+                  {content.description}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

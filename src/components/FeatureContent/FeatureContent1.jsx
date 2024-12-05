@@ -8,37 +8,37 @@ const FeatureContent1 = () => {
   const contents = [
     {
       Icon: Sun,
-      heaidng: "Et, odio elementum",
+      heading: "Et, odio elementum",
       subHeading:
         "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
     },
     {
       Icon: Sun,
-      heaidng: "Et, odio elementum",
+      heading: "Et, odio elementum",
       subHeading:
         "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
     },
     {
       Icon: Sun,
-      heaidng: "Et, odio elementum",
+      heading: "Et, odio elementum",
       subHeading:
         "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
     },
     {
       Icon: Sun,
-      heaidng: "Et, odio elementum",
+      heading: "Et, odio elementum",
       subHeading:
         "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
     },
     {
       Icon: Sun,
-      heaidng: "Et, odio elementum",
+      heading: "Et, odio elementum",
       subHeading:
         "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
     },
     {
       Icon: Sun,
-      heaidng: "Et, odio elementum",
+      heading: "Et, odio elementum",
       subHeading:
         "Aliquam vehicula pellentesque id mi quam ipsum. Arcu nisl faucibus mattis etiam.",
     },
@@ -58,7 +58,7 @@ const FeatureContent1 = () => {
             className="flex flex-col gap-3 text-center items-center justify-center"
           >
             <CircleIcon size={35} Icon={content.Icon} color="darkblue" />
-            <h1 className="text-lg sm:text-2xl font-bold">{content.heaidng}</h1>
+            <h1 className="text-lg sm:text-2xl font-bold">{content.heading}</h1>
             <p className="text-sm sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
               {content.subHeading}
             </p>

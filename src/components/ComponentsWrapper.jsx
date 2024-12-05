@@ -54,6 +54,22 @@ import FeatureContent4 from "./FeatureContent/FeatureContent4";
 import FeatureContent5 from "./FeatureContent/FeatureContent5";
 import FeatureContent6 from "./FeatureContent/FeatureContent6";
 import FeatureContent7 from "./FeatureContent/FeatureContent7";
+import FeatureContent8 from "./FeatureContent/FeatureContent8";
+import FeatureContent9 from "./FeatureContent/FeatureContent9";
+import FeatureContent10 from "./FeatureContent/FeatureContent10";
+import FeatureContent11 from "./FeatureContent/FeatureContent11";
+import FeatureContent12 from "./FeatureContent/FeatureContent12";
+import FeatureContent13 from "./FeatureContent/FeatureContent13";
+import FeatureContent14 from "./FeatureContent/FeatureContent14";
+import FeatureContent15 from "./FeatureContent/FeatureContent15";
+import FeatureContent16 from "./FeatureContent/FeatureContent16";
+import FeatureContent17 from "./FeatureContent/FeatureContent17";
+import FeatureContent18 from "./FeatureContent/FeatureContent18";
+import Faq1 from "./Faq/Faq1";
+import Faq2 from "./Faq/Faq2";
+import Faq3 from "./Faq/Faq3";
+import Faq4 from "./Faq/Faq4";
+import Faq5 from "./Faq/Faq5";
 
 const ComponentsWrapper = () => {
   const allComponents = [
@@ -307,7 +323,7 @@ const ComponentsWrapper = () => {
       ],
     },
     {
-      name: "Feature Content",
+      name: "Feature Contents",
       type: "dropdown",
       components: [
         {
@@ -345,6 +361,92 @@ const ComponentsWrapper = () => {
           type: "component",
           component: <FeatureContent7 />,
         },
+        {
+          name: "Feature Content 8",
+          type: "component",
+          component: <FeatureContent8 />,
+        },
+        {
+          name: "Feature Content 9",
+          type: "component",
+          component: <FeatureContent9 />,
+        },
+        {
+          name: "Feature Content 10",
+          type: "component",
+          component: <FeatureContent10 />,
+        },
+        {
+          name: "Feature Content 11",
+          type: "component",
+          component: <FeatureContent11 />,
+        },
+        {
+          name: "Feature Content 12",
+          type: "component",
+          component: <FeatureContent12 />,
+        },
+        {
+          name: "Feature Content 13",
+          type: "component",
+          component: <FeatureContent13 />,
+        },
+        {
+          name: "Feature Content 14",
+          type: "component",
+          component: <FeatureContent14 />,
+        },
+        {
+          name: "Feature Content 15",
+          type: "component",
+          component: <FeatureContent15 />,
+        },
+        {
+          name: "Feature Content 16",
+          type: "component",
+          component: <FeatureContent16 />,
+        },
+        {
+          name: "Feature Content 17",
+          type: "component",
+          component: <FeatureContent17 />,
+        },
+        {
+          name: "Feature Content 18",
+          type: "component",
+          component: <FeatureContent18 />,
+        },
+      ],
+    },
+    {
+      name: "FAQs",
+      type: "dropdown",
+      components: [
+        {
+          name: "Faq 1",
+          type: "component",
+          component: <Faq1 />,
+        },
+        {
+          name: "Faq 2",
+          type: "component",
+          component: <Faq2 />,
+        },
+        {
+          name: "Faq 3",
+          type: "component",
+          component: <Faq3 />,
+        },
+        {
+          name: "Faq 4",
+          type: "component",
+          component: <Faq4 />,
+        },
+        {
+          name: "Faq 5",
+          type: "component",
+          component: <Faq5 />,
+        },
       ],
     },
   ];
@@ -356,6 +458,7 @@ const ComponentsWrapper = () => {
     "center contents": true,
     "left contents": true,
     "Right contents": true,
+    "Feature Contents": true,
   });
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -430,7 +533,7 @@ const ComponentsWrapper = () => {
                         <SecondaryButton
                           className={`w-full  !justify-start ${
                             selectedComponentName === subComp.name &&
-                            " !bg-[#005cf0]"
+                            " !bg-[#005cf0] !text-white"
                           }`}
                           key={subIndex}
                           onPress={() =>
