@@ -34,7 +34,7 @@ const Faq3 = () => {
   };
 
   return (
-    <div className="container mx-auto py-10 grid items-center min-h-screen sm:gap-5 sm:grid-cols-[auto_auto]">
+    <div className="container mx-auto py-10 grid items-center my-10 sm:gap-5 sm:grid-cols-[auto_auto]">
       <SectionHeading
         className={"w-full !text-left !p-2 sm:!p-0"}
         heading="Frequently Asked Questions"

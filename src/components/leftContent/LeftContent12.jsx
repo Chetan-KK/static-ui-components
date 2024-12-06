@@ -6,8 +6,8 @@ import Moon from "../../assets/icons/Moon";
 const LeftContent12 = () => {
   return (
     <div className="py-10">
-      <div className="lg:container mx-auto p-2 my-7 md:px-20 md:my-16 grid grid-cols-1 md:grid-cols-[1fr_auto] items-start justify-items-center md:justify-items-end gap-10 sm:gap-20">
-        <div className="space-y-5  sm:w-auto">
+      <div className="lg:container mx-auto p-2 my-7 md:px-20 md:my-16 grid grid-cols-1 md:grid-cols-[1fr_auto] items-start justify-items-center md:justify-items-end gap-10 sm:items-center sm:gap-20">
+        <div className="space-y-5 sm:w-auto">
           <div className={`container mx-auto my-5`}>
             <h1 className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5">
               Make Your Own Apps using Models

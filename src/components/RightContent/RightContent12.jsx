@@ -1,12 +1,9 @@
 import React, { useState } from "react";
-import Button from "../utils/Button";
-import SectionHeading from "../utils/SectionHeading";
-import Moon from "../../assets/icons/Moon";
 
 const RightContent12 = () => {
   return (
     <div className="py-10">
-      <div className="lg:container mx-auto p-2 my-7 md:px-20 md:my-16 grid grid-cols-1 md:grid-cols-[auto_1fr] items-start justify-items-center md:justify-items-end gap-10 sm:gap-20">
+      <div className="lg:container mx-auto p-2 my-7 md:px-20 md:my-16 grid grid-cols-1 md:grid-cols-[auto_1fr] items-start justify-items-center md:justify-items-end gap-10 sm:gap-20 sm:items-center">
         <img
           src="/dummyImgLight.png"
           className="w-full h-auto sm:w-[30rem] md:h-[25rem] object-cover rounded-xl"

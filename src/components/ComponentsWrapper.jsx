@@ -70,6 +70,20 @@ import Faq2 from "./Faq/Faq2";
 import Faq3 from "./Faq/Faq3";
 import Faq4 from "./Faq/Faq4";
 import Faq5 from "./Faq/Faq5";
+import CallToAction1 from "./callToAction/CallToAction1";
+import CallToAction2 from "./callToAction/CallToAction2";
+import CallToAction3 from "./callToAction/CallToAction3";
+import CallToAction4 from "./callToAction/CallToAction4";
+import CallToAction5 from "./callToAction/CallToAction5";
+import CallToAction6 from "./callToAction/CallToAction6";
+import CallToAction7 from "./callToAction/CallToAction7";
+import CallToAction8 from "./callToAction/CallToAction8";
+import Clients1 from "../Clients/Clients1";
+import Clients3 from "../Clients/Clients3";
+import Clients2 from "../Clients/Clients2";
+import Clients4 from "../Clients/Clients4";
+import Clients5 from "../Clients/Clients5";
+import Clients6 from "../Clients/Clients6";
 
 const ComponentsWrapper = () => {
   const allComponents = [
@@ -446,6 +460,88 @@ const ComponentsWrapper = () => {
           name: "Faq 5",
           type: "component",
           component: <Faq5 />,
+        },
+      ],
+    },
+    {
+      name: "Call to actions",
+      type: "dropdown",
+      components: [
+        {
+          name: "CallToAction 1",
+          type: "component",
+          component: <CallToAction1 />,
+        },
+        {
+          name: "CallToAction 2",
+          type: "component",
+          component: <CallToAction2 />,
+        },
+        {
+          name: "CallToAction 3",
+          type: "component",
+          component: <CallToAction3 />,
+        },
+        {
+          name: "CallToAction 4",
+          type: "component",
+          component: <CallToAction4 />,
+        },
+        {
+          name: "CallToAction 5",
+          type: "component",
+          component: <CallToAction5 />,
+        },
+        {
+          name: "CallToAction 6",
+          type: "component",
+          component: <CallToAction6 />,
+        },
+        {
+          name: "CallToAction 7",
+          type: "component",
+          component: <CallToAction7 />,
+        },
+        {
+          name: "CallToAction 8",
+          type: "component",
+          component: <CallToAction8 />,
+        },
+      ],
+    },
+    {
+      name: "Clients",
+      type: "dropdown",
+      components: [
+        {
+          name: "Clients 1",
+          type: "component",
+          component: <Clients1 />,
+        },
+        {
+          name: "Clients 2",
+          type: "component",
+          component: <Clients2 />,
+        },
+        {
+          name: "Clients 3",
+          type: "component",
+          component: <Clients3 />,
+        },
+        {
+          name: "Clients 4",
+          type: "component",
+          component: <Clients4 />,
+        },
+        {
+          name: "Clients 5",
+          type: "component",
+          component: <Clients5 />,
+        },
+        {
+          name: "Clients 6",
+          type: "component",
+          component: <Clients6 />,
         },
       ],
     },

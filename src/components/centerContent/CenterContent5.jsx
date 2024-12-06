@@ -14,7 +14,9 @@ const CenterContent5 = () => {
       <video
         src="/dummyVideo.mp4"
         className="mx-auto w-[90vw] lg:w-[60rem] h-96 md:h-[40rem] object-cover rounded-xl"
-        controls
+        autoPlay
+        loop
+        // controls
       ></video>
     </div>
   );

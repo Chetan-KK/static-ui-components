@@ -37,7 +37,7 @@ const Faq5 = () => {
   };
 
   return (
-    <div className="container mx-auto py-10 grid  min-h-screen sm:gap-5 md:grid-cols-[auto_auto]">
+    <div className="container mx-auto py-10 grid my-10 sm:gap-5 md:grid-cols-[auto_auto]">
       <div className="p-5 mb-10">
         <SectionHeading
           className={"w-full !text-left !p-2 sm:!p-0"}

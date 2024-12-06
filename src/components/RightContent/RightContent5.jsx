@@ -34,7 +34,7 @@ const RightContent5 = () => {
         heading="Etiam nulla lectus amet nunc molestie at vulputate."
         subHeading="Neque, pulvinar vestibulum non aliquam."
       />
-      <div className="lg:container mx-auto p-4 my-7 sm:px-20 sm:my-16 grid grid-cols-1 sm:grid-cols-2 items-center justify-items-center sm:justify-items-end gap-5">
+      <div className="lg:container mx-auto p-4 my-7 sm:px-20 sm:my-16 grid grid-cols-1 sm:grid-cols-[auto_auto] items-center justify-items-center sm:justify-items-start gap-5">
         <img
           src="/dummyImgLight.png"
           className="w-[90vw] h-auto sm:w-auto md:h-[30rem] object-cover rounded-xl"
