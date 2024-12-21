@@ -39,26 +39,30 @@ const FeatureContent9 = () => {
     <div className="py-10">
       <div className="container mx-auto text-center space-y-6">
         <h5 className="text-[#005cf0] font-bold uppercase">Caption</h5>
-        <h1 className=" text-xl sm:text-4xl font-bold">
+        <div className=" text-xl sm:text-4xl font-bold">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet
           at molestie mattis.
-        </h1>
+        </div>
       </div>
-      <div className="container mx-auto my-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 sm:text-center p-2 sm:p-5 place-items-center gap-5 gap-y-10 lg:px-20 items-start cursor-pointer">
+      <div className="container mx-auto my-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:text-center p-2 sm:p-5 place-items-center gap-2 gap-y-10 lg:px-20 items-start cursor-pointer">
         {contents.map((content, i) => (
           <div
             key={i}
             onClick={() => {
               setActive(i);
             }}
-            className="flex flex-col gap-3 text-center items-center justify-center hover:-translate-y-1 transition-all"
+            className={`flex flex-col gap-5 p-4 rounded-lg text-center h-full items-center justify-start hover:-translate-y-1 transition-all border-2 border-transparent
+              ${active === i && "bg-black/5 dark:bg-white/5 border-black/20"}
+              `}
           >
             <content.Icon
               className={`size-10 text-[#4d4d4d] dark:text-[#ababab] ${
                 active === i && "!text-[#005cf0]"
               } transition-all`}
             />
-            <h1 className="text-lg sm:text-2xl font-bold">{content.heading}</h1>
+            <div className="text-lg sm:text-2xl font-bold">
+              {content.heading}
+            </div>
             <p className="text-sm sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
               {content.subHeading}
             </p>

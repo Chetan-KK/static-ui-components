@@ -16,28 +16,28 @@ const RightContent10 = () => {
       <div className="w-[90vw] xl:mx-20 space-y-5  sm:w-auto">
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-2">
-            <h1 className=" text-lg sm:text-2xl font-bold">Title</h1>
+            <div className=" text-lg sm:text-2xl font-bold">Title</div>
             <p className="text-xs text-[#4d4d4d] dark:text-[#ababab]">
               Tristique elementum, ac maecenas enim fringilla placerat
               scelerisque semper.
             </p>
           </div>
           <div className="space-y-2">
-            <h1 className=" text-lg sm:text-2xl font-bold">Title</h1>
+            <div className=" text-lg sm:text-2xl font-bold">Title</div>
             <p className="text-xs text-[#4d4d4d] dark:text-[#ababab]">
               Tristique elementum, ac maecenas enim fringilla placerat
               scelerisque semper.
             </p>
           </div>
           <div className="space-y-2">
-            <h1 className=" text-lg sm:text-2xl font-bold">Title</h1>
+            <div className=" text-lg sm:text-2xl font-bold">Title</div>
             <p className="text-xs text-[#4d4d4d] dark:text-[#ababab]">
               Tristique elementum, ac maecenas enim fringilla placerat
               scelerisque semper.
             </p>
           </div>
           <div className="space-y-2">
-            <h1 className=" text-lg sm:text-2xl font-bold">Title</h1>
+            <div className=" text-lg sm:text-2xl font-bold">Title</div>
             <p className="text-xs text-[#4d4d4d] dark:text-[#ababab]">
               Tristique elementum, ac maecenas enim fringilla placerat
               scelerisque semper.

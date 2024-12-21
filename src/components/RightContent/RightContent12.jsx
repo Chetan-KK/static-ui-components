@@ -11,10 +11,10 @@ const RightContent12 = () => {
         />
         <div className="space-y-5  sm:w-auto">
           <div className={`container mx-auto my-5`}>
-            <h1 className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5">
+            <div className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5">
               Make Your Own Apps using Models
               <span className="text-[#005cf0]">Lab</span> API
-            </h1>
+            </div>
             <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
               Use Our API to Build apps, Make Great AI Art, Create Awesome
               Videos and generate sound with ease!

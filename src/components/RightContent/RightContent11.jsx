@@ -15,9 +15,9 @@ const RightContent11 = () => {
       />
       <div className="w-[90vw] space-y-5  sm:w-auto">
         <h5 className="text-[#005cf0] font-bold uppercase">Caption</h5>
-        <h1 className=" text-xl sm:text-3xl font-bold">
+        <div className=" text-xl sm:text-3xl font-bold">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </h1>
+        </div>
         <p className=" text-xs sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
           Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit
           nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.

@@ -15,9 +15,9 @@ const RightContent8 = () => {
         alt="hero image"
       />
       <div className="w-[90vw] xl:mx-20 space-y-5  sm:w-auto">
-        <h1 className=" text-xl sm:text-3xl font-bold">
+        <div className=" text-xl sm:text-3xl font-bold">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </h1>
+        </div>
         <div className="flex gap-2">
           <div className="space-y-2">
             <CircleIcon Icon={Sun} />

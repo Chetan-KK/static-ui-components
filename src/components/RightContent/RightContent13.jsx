@@ -9,10 +9,10 @@ const RightContent13 = () => {
   return (
     <div className="py-10">
       <div className="lg:container mx-auto p-2 my-7 md:px-20 md:my-16 grid grid-cols-1 lg:grid-cols-[auto_1fr] items-start justify-items-center md:justify-items-end gap-10 sm:gap-20">
-        <div className="relative">
+        <div className="relative flex w-full justify-center">
           <img
             src="/dummyImgLight.png"
-            className="w-full h-auto sm:w-[40rem] md:h-[25rem] object-cover rounded-xl"
+            className="w-full h-auto sm:w-[35rem] md:h-[25rem] object-cover rounded-xl"
             alt="hero image"
           />
 
@@ -23,11 +23,11 @@ const RightContent13 = () => {
             onChange={(e) => setInput(e.target.value)}
           />
         </div>
-        <div className="space-y-5  sm:w-auto">
+        <div className="space-y-5  sm:w-auto sm:min-w-96">
           <div className={`container mx-auto my-5`}>
-            <h1 className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5">
+            <div className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5">
               Our Popular Use Cases
-            </h1>
+            </div>
             <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
               Here’s what developers can do with our voice AI generator:
             </p>

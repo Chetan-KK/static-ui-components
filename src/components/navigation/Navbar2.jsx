@@ -52,12 +52,12 @@ const Navbar2 = () => {
           }`}
         >
           <Link to={"/"} className="text-2xl font-bold md:hidden">
-            <h1 className="sm:hidden">
+            <div className="sm:hidden">
               M<span className="text-[#005cf0]">L</span>
-            </h1>
-            <h1 className="hidden sm:block">
+            </div>
+            <div className="hidden sm:block">
               Models<span className="text-[#005cf0]">Lab</span>
-            </h1>
+            </div>
           </Link>
           {links.map((link, _) => (
             <Link
@@ -70,12 +70,12 @@ const Navbar2 = () => {
           ))}
         </nav>
         <Link to={"/"} className="text-2xl font-bold w-min">
-          <h1 className="sm:hidden">
+          <div className="sm:hidden">
             M<span className="text-[#005cf0]">L</span>
-          </h1>
-          <h1 className="hidden sm:block">
+          </div>
+          <div className="hidden sm:block">
             Models<span className="text-[#005cf0]">Lab</span>
-          </h1>
+          </div>
         </Link>
         <div className="flex gap-2 justify-end">
           <User />

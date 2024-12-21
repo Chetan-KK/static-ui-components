@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import SectionHeading from "../components/utils/SectionHeading";
-import Account from "../components/utils/Account";
-import Down from "../assets/icons/Down";
+import SectionHeading from "../utils/SectionHeading";
+import Account from "../utils/Account";
+import Down from "../../assets/icons/Down";
 import { Button } from "react-aria-components";
 
 const comments = [

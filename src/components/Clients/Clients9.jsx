@@ -1,49 +1,50 @@
 import React, { useState } from "react";
-import SectionHeading from "../components/utils/SectionHeading";
-import Account from "../components/utils/Account";
-import Down from "../assets/icons/Down";
+import SectionHeading from "../utils/SectionHeading";
+import Down from "../../assets/icons/Down";
+import Star from "../../assets/icons/Star";
+import CircleIcon from "../utils/CircleIcon";
 import { Button } from "react-aria-components";
 
 const comments = [
   {
-    text: "Pellentesque maecenas maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
+    text: "Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.",
     name: "Jane Doe",
-    description: "Senior Designer",
+    stars: 1,
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    description: "Senior Designer",
+    stars: 2,
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    description: "Senior Designer",
+    stars: 3,
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    description: "Senior Designer",
+    stars: 4,
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    description: "Senior Designer",
+    stars: 3,
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    description: "Senior Designer",
+    stars: 2,
     profileSrc: "./dummyImgLight.png",
   },
 ];
 
-const Clients8 = () => {
+const Clients9 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -74,22 +75,41 @@ const Clients8 = () => {
             onClick={handlePrev}
           />
         </Button>
-        <div className="grid sm:grid-cols-2 gap-5 sm:gap-10 transition-opacity duration-500 items-center ease-in-out h-72">
+        <div className="grid sm:grid-cols-2 gap-10 sm:gap-10 transition-opacity duration-500 items-center ease-in-out h-72">
           {comments
             .slice(currentIndex, currentIndex + 2)
             .map((comment, index) => (
               <div
                 key={index}
-                className="flex flex-col justify-start gap-3 sm:gap-5 p-3 sm:p-5 rounded-xl border border-[#f0f0f0] dark:border-[#252528] items-start"
+                className="flex flex-col justify-center gap-3 sm:gap-5 items-center"
               >
-                <Account
-                  name={comment.name}
-                  description={comment.description}
-                  profileSrc={comment.profileSrc}
-                />
-                <p className="text-sm sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
+                <div className="flex gap-2">
+                  {Array.from({ length: 5 }).map((_, starIndex) => (
+                    <Star
+                      key={starIndex}
+                      className={`size-5 ${
+                        starIndex < comment.stars
+                          ? "text-[#005cf0]"
+                          : "text-[#4d4d4d] dark:text-[#ababab]"
+                      }`}
+                    />
+                  ))}
+                </div>
+                <q className="text-sm text-center sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
                   {comment.text}
-                </p>
+                </q>
+                {comment.profileSrc ? (
+                  <img
+                    src={comment.profileSrc}
+                    className="size-10 sm:size-12 rounded-full object-cover"
+                    alt=""
+                  />
+                ) : (
+                  <CircleIcon />
+                )}
+                <div className="text-sm sm:text-base font-bold">
+                  {comment.name}
+                </div>
               </div>
             ))}
         </div>
@@ -106,4 +126,4 @@ const Clients8 = () => {
   );
 };
 
-export default Clients8;
+export default Clients9;

@@ -17,7 +17,7 @@ const BigCard = ({
         alt=""
         className="rounded-md object-cover w-full h-60 sm:h-96"
       />
-      <h1 className="font-bold text-xl">{heading}</h1>
+      <div className="font-bold text-xl">{heading}</div>
       <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm">{subHeading}</p>
     </div>
   );

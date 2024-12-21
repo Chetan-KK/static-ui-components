@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "../components/utils/SectionHeading";
+import SectionHeading from "../utils/SectionHeading";
 
 const Clients5 = () => {
   return (

@@ -39,7 +39,9 @@ const FeatureContent18 = () => {
               alt=""
             />
             <div className="pb-2 px-4">
-              <h1 className="text-lg sm:text-2xl font-bold">{content.count}</h1>
+              <div className="text-lg sm:text-2xl font-bold">
+                {content.count}
+              </div>
               <p className="text-sm sm:text-base text-[#4d4d4d] dark:text-[#ababab] sm:whitespace-nowrap">
                 {content.title}
               </p>

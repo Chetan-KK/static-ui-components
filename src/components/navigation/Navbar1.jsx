@@ -37,12 +37,12 @@ const Navbar1 = () => {
     <header className="sticky top-0 border-b border-[#f0f0f0] dark:border-[#252528] bg-white/70 dark:bg-black/70 backdrop-blur-md backdrop-saturate-200">
       <div className="lg:container mx-auto p-4 grid grid-cols-2 md:grid-cols-[1fr_auto_1fr] items-center">
         <Link to={"/"} className="text-2xl font-bold w-min">
-          <h1 className="sm:hidden">
+          <div className="sm:hidden">
             M<span className="text-[#005cf0]">L</span>
-          </h1>
-          <h1 className="hidden sm:block">
+          </div>
+          <div className="hidden sm:block">
             Models<span className="text-[#005cf0]">Lab</span>
-          </h1>
+          </div>
         </Link>
         <div
           className={`fixed md:hidden top-0 left-0 bg-black/50 h-screen w-full z-20 ${
@@ -60,12 +60,12 @@ const Navbar1 = () => {
           }`}
         >
           <Link to={"/"} className="text-2xl font-bold md:hidden">
-            <h1 className="sm:hidden">
+            <div className="sm:hidden">
               M<span className="text-[#005cf0]">L</span>
-            </h1>
-            <h1 className="hidden sm:block">
+            </div>
+            <div className="hidden sm:block">
               Models<span className="text-[#005cf0]">Lab</span>
-            </h1>
+            </div>
           </Link>
           {links.map((link, _) => (
             <Link

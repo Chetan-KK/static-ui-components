@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import SectionHeading from "../components/utils/SectionHeading";
-import Account from "../components/utils/Account";
-import Down from "../assets/icons/Down";
-import Star from "../assets/icons/Star";
-import CircleIcon from "../components/utils/CircleIcon";
+import SectionHeading from "../utils/SectionHeading";
+import Account from "../utils/Account";
+import Down from "../../assets/icons/Down";
+import Star from "../../assets/icons/Star";
+import CircleIcon from "../utils/CircleIcon";
 import { Button } from "react-aria-components";
 
 const comments = [
@@ -104,7 +104,7 @@ const Clients13 = () => {
                   <CircleIcon />
                 )}
                 <div className="text-center">
-                  <h1 className=" sm:text-xl font-bold">{comment.name}</h1>
+                  <div className=" sm:text-xl font-bold">{comment.name}</div>
                   <p className="text-xs sm:text-sm text-[#4d4d4d] dark:text-[#ababab]">
                     {comment.role}
                   </p>

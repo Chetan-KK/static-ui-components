@@ -19,9 +19,9 @@ const RightContent3 = () => {
         />
         <div className="space-y-5  sm:w-auto">
           <div className={`container mx-auto my-5`}>
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-5">
+            <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-5">
               Etiam nulla lectus amet nunc molestie at vulputate.
-            </h1>
+            </div>
             <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
               Facilisi viverra dictum augue eu lobortis elit. In et donec
               habitasse lacus mi commodo elementum.
@@ -37,9 +37,9 @@ const RightContent3 = () => {
         />
         <div className="space-y-5  sm:w-auto">
           <div className={`container mx-auto my-5`}>
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-5">
+            <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-5">
               Etiam nulla lectus amet nunc molestie at vulputate.
-            </h1>
+            </div>
             <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
               Facilisi viverra dictum augue eu lobortis elit. In et donec
               habitasse lacus mi commodo elementum.

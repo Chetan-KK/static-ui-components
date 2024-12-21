@@ -16,7 +16,7 @@ const SmallCard = ({
         alt=""
         className="rounded-md object-cover w-full sm:max-h-40 md:max-h-fit md:h-48"
       />
-      <h1 className="font-bold text-base md:text-xl">{heading}</h1>
+      <div className="font-bold text-base md:text-xl">{heading}</div>
       <p className="text-[#4d4d4d]  dark:text-[#ababab]  text-xs md:text-sm">
         {subHeading}
       </p>

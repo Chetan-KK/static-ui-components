@@ -8,10 +8,18 @@ const Account = ({
 }) => {
   return (
     <div className="flex gap-2 items-center">
-      {profileSrc ? <img src={profileSrc} alt="" /> : <CircleIcon />}
+      {profileSrc ? (
+        <img
+          src={profileSrc}
+          className="size-10 rounded-full object-cover"
+          alt=""
+        />
+      ) : (
+        <CircleIcon />
+      )}
       <div className="">
-        <h1 className="text-sm font-bold">{name}</h1>
-        <p className="text-xs text-[#4d4d4d] dark:text-[#ababab]">
+        <div className="text-sm sm:text-base font-bold">{name}</div>
+        <p className="text-xs sm:text-sm text-[#4d4d4d] dark:text-[#ababab]">
           {description}
         </p>
       </div>

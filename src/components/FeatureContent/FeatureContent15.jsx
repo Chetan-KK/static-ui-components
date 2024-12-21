@@ -22,10 +22,10 @@ const FeatureContent15 = () => {
     <div className="py-10">
       <div className="container mx-auto text-center space-y-6">
         <h5 className="text-[#005cf0] font-bold uppercase">Caption</h5>
-        <h1 className=" text-xl sm:text-4xl font-bold">
+        <div className=" text-xl sm:text-4xl font-bold">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet
           at molestie mattis.
-        </h1>
+        </div>
       </div>
       <div className="container mx-auto my-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-2 sm:p-5 gap-5 gap-y-10 lg:px-20 items-start cursor-pointer">
         {contents.map((content, i) => (

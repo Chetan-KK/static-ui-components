@@ -21,7 +21,7 @@ const LeftContent1 = () => {
       </div>
       <img
         src="/dummyImgLight.png"
-        className="w-[90vw] h-auto sm:w-[30rem] md:h-[25rem] object-cover rounded-xl"
+        className=" h-auto sm:w-[30rem] md:h-[25rem] object-cover rounded-xl"
         alt="hero image"
       />
     </div>

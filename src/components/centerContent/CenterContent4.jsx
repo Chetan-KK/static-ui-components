@@ -12,9 +12,9 @@ const CenterContent4 = () => {
       />
       <div className="lg:container !max-w-[70rem] mx-auto  p-4 my-7 sm:my-16 lg:px-20 grid grid-cols-1 sm:grid-cols-2 items-center justify-items-center sm:justify-items-end gap-5 ">
         <div className="w-auto">
-          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:mb-5">
+          <div className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:mb-5">
             Purus id tellus arcu habitant proin magna. Integer purus
-          </h1>
+          </div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Facilisi viverra dictum augue eu lobortis elit. In et donec
             habitasse lacus mi commodo elementum.
@@ -38,9 +38,9 @@ const CenterContent4 = () => {
           alt="hero image"
         />
         <div className="w-auto">
-          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:mb-5">
+          <div className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:mb-5">
             Purus id tellus arcu habitant proin magna. Integer purus
-          </h1>
+          </div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Facilisi viverra dictum augue eu lobortis elit. In et donec
             habitasse lacus mi commodo elementum.
@@ -55,9 +55,9 @@ const CenterContent4 = () => {
       {/*  */}
       <div className="lg:container !max-w-[70rem] mx-auto  p-4 my-7 sm:my-16 lg:px-20 grid grid-cols-1 sm:grid-cols-2 items-center justify-items-center sm:justify-items-end gap-5 ">
         <div className="w-auto">
-          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:mb-5">
+          <div className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:mb-5">
             Purus id tellus arcu habitant proin magna. Integer purus
-          </h1>
+          </div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Facilisi viverra dictum augue eu lobortis elit. In et donec
             habitasse lacus mi commodo elementum.
@@ -81,9 +81,9 @@ const CenterContent4 = () => {
           alt="hero image"
         />
         <div className="w-auto">
-          <h1 className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:mb-5">
+          <div className="text-xl sm:text-2xl md:text-4xl font-bold mb-3 md:mb-5">
             Purus id tellus arcu habitant proin magna. Integer purus
-          </h1>
+          </div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Facilisi viverra dictum augue eu lobortis elit. In et donec
             habitasse lacus mi commodo elementum.

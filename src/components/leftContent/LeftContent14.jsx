@@ -8,9 +8,9 @@ const LeftContent14 = () => {
         <div className={`my-5 ml-2 md:ml-10 space-y-5`}>
           <h5 className="text-[#005cf0] font-bold uppercase">Introductio</h5>
 
-          <h1 className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5">
+          <div className="text-xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5">
             Our Popular Use Cases
-          </h1>
+          </div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Here’s what developers can do with our voice AI generator:
           </p>

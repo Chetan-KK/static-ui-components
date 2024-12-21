@@ -1,62 +1,66 @@
 import React, { useState } from "react";
-import SectionHeading from "../components/utils/SectionHeading";
-import Account from "../components/utils/Account";
-import Down from "../assets/icons/Down";
-import Star from "../assets/icons/Star";
-import CircleIcon from "../components/utils/CircleIcon";
+import SectionHeading from "../utils/SectionHeading";
+import Account from "../utils/Account";
+import Down from "../../assets/icons/Down";
 import { Button } from "react-aria-components";
 
 const comments = [
   {
     text: "Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, aliquet duis pretium consequat. Semper sed viverra enim ut nunc.",
     name: "Jane Doe",
-    stars: 1,
+    logo: "/clientLogo.png",
+    role: "Senior Designer",
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    stars: 2,
+    logo: "/clientLogo.png",
+    role: "Senior Designer",
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    stars: 3,
+    logo: "/clientLogo.png",
+    role: "Senior Designer",
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    stars: 4,
+    logo: "/clientLogo.png",
+    role: "Senior Designer",
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    stars: 3,
+    logo: "/clientLogo.png",
+    role: "Senior Designer",
     profileSrc: "./dummyImgLight.png",
   },
   {
     text: "maecenas vitae vehicula eget. Ultricies ac id massa maecenas nulla arcu lacus. Turpis porttitor.",
     name: "Jane Doe",
-    stars: 2,
+    logo: "/clientLogo.png",
+    role: "Senior Designer",
     profileSrc: "./dummyImgLight.png",
   },
 ];
 
-const Clients9 = () => {
+const Clients14 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 2);
+      setCurrentIndex(currentIndex - 1);
     }
   };
 
   const handleNext = () => {
-    if (currentIndex < comments.length - 2) {
-      setCurrentIndex(currentIndex + 2);
+    if (currentIndex < comments.length - 1) {
+      setCurrentIndex(currentIndex + 1);
     }
   };
 
@@ -76,48 +80,39 @@ const Clients9 = () => {
             onClick={handlePrev}
           />
         </Button>
-        <div className="grid sm:grid-cols-2 gap-10 sm:gap-10 transition-opacity duration-500 items-center ease-in-out h-72">
-          {comments
-            .slice(currentIndex, currentIndex + 2)
-            .map((comment, index) => (
-              <div
-                key={index}
-                className="flex flex-col justify-center gap-3 sm:gap-5 items-center"
-              >
-                <div className="flex gap-2">
-                  {Array.from({ length: 5 }).map((_, starIndex) => (
-                    <Star
-                      key={starIndex}
-                      className={`size-5 ${
-                        starIndex < comment.stars
-                          ? "text-[#005cf0]"
-                          : "text-[#4d4d4d] dark:text-[#ababab]"
-                      }`}
-                    />
-                  ))}
-                </div>
-                <q className="text-sm text-center sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
-                  {comment.text}
-                </q>
-                {comment.profileSrc ? (
-                  <img
-                    src={comment.profileSrc}
-                    className="size-10 sm:size-12 rounded-full object-cover"
-                    alt=""
-                  />
-                ) : (
-                  <CircleIcon />
-                )}
-                <h1 className="text-sm sm:text-base font-bold">
-                  {comment.name}
-                </h1>
+        <div className="flex flex-col justify-center gap-7 sm:gap-10 items-center transition-opacity duration-500 ease-in-out h-96 p-3 sm:p-5 rounded-xl border border-[#f0f0f0] dark:border-[#252528]">
+          <div className="text-center flex flex-col items-center justify-center gap-4">
+            {comments[currentIndex].profileSrc ? (
+              <img
+                src={comments[currentIndex].profileSrc}
+                className="size-16 sm:size-20 rounded-full object-cover"
+                alt=""
+              />
+            ) : (
+              <CircleIcon />
+            )}
+            <div>
+              <div className="sm:text-xl font-bold">
+                {comments[currentIndex].name}
               </div>
-            ))}
+              <p className="text-xs sm:text-sm text-[#4d4d4d] dark:text-[#ababab]">
+                {comments[currentIndex].role}
+              </p>
+            </div>
+          </div>
+          <q className=" sm:text-2xl text-center max-w-3xl">
+            {comments[currentIndex].text}
+          </q>
+          <img
+            src={comments[currentIndex].logo}
+            className="h-7 sm:h-10 w-auto"
+            alt=""
+          />
         </div>
         <Button>
           <Down
             className={`-rotate-90 size-7 sm:size-14 cursor-pointer ${
-              currentIndex >= comments.length - 2 ? "opacity-50" : ""
+              currentIndex === comments.length - 1 ? "opacity-50" : ""
             }`}
             onClick={handleNext}
           />
@@ -127,4 +122,4 @@ const Clients9 = () => {
   );
 };
 
-export default Clients9;
+export default Clients14;

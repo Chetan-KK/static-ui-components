@@ -3,6 +3,8 @@ import SecondaryButton from "./utils/SecondaryButton";
 import Down from "../assets/icons/Down";
 import HamburgerMenu from "../assets/icons/HamburgerMenu";
 import Close from "../assets/icons/Close";
+
+// all components
 import Navbar4 from "./navigation/Navbar4";
 import Navbar5 from "./navigation/Navbar5";
 import Navbar1 from "./navigation/Navbar1";
@@ -19,6 +21,7 @@ import CenterContent6 from "./centerContent/CenterContent6";
 import CenterContent7 from "./centerContent/CenterContent7";
 import CenterContent8 from "./centerContent/CenterContent8";
 import CenterContent9 from "./centerContent/CenterContent9";
+import CenterContent10 from "./centerContent/CenterContent10";
 import LeftContent1 from "./leftContent/LeftContent1";
 import LeftContent2 from "./leftContent/LeftContent2";
 import LeftContent3 from "./leftContent/LeftContent3";
@@ -78,12 +81,35 @@ import CallToAction5 from "./callToAction/CallToAction5";
 import CallToAction6 from "./callToAction/CallToAction6";
 import CallToAction7 from "./callToAction/CallToAction7";
 import CallToAction8 from "./callToAction/CallToAction8";
-import Clients1 from "../Clients/Clients1";
-import Clients3 from "../Clients/Clients3";
-import Clients2 from "../Clients/Clients2";
-import Clients4 from "../Clients/Clients4";
-import Clients5 from "../Clients/Clients5";
-import Clients6 from "../Clients/Clients6";
+import Clients1 from "./Clients/Clients1";
+import Clients3 from "./Clients/Clients3";
+import Clients2 from "./Clients/Clients2";
+import Clients4 from "./Clients/Clients4";
+import Clients5 from "./Clients/Clients5";
+import Clients6 from "./Clients/Clients6";
+import Hero1 from "./heros/Hero1";
+import Hero2 from "./heros/Hero2";
+import Hero3 from "./heros/Hero3";
+import Hero4 from "./heros/Hero4";
+import Hero5 from "./heros/Hero5";
+import Hero6 from "./heros/Hero6";
+import Hero7 from "./heros/Hero7";
+import Hero8 from "./heros/Hero8";
+import Hero9 from "./heros/Hero9";
+import Hero10 from "./heros/Hero10";
+import Hero13 from "./heros/Hero13";
+import Hero12 from "./heros/Hero12";
+import Hero11 from "./heros/Hero11";
+import Hero14 from "./heros/Hero14";
+import Hero15 from "./heros/Hero15";
+import CenterContent12 from "./centerContent/CenterContent12";
+import Clients7 from "./Clients/Clients7";
+import Clients14 from "./Clients/Clients14";
+import Clients13 from "./Clients/Clients13";
+import Clients8 from "./Clients/Clients8";
+import Clients9 from "./Clients/Clients9";
+import Footer1 from "./footer/footer1";
+import Footer2 from "./footer/Footer2";
 
 const ComponentsWrapper = () => {
   const allComponents = [
@@ -125,6 +151,87 @@ const ComponentsWrapper = () => {
           name: "navbar 7",
           type: "component",
           component: <Navbar7 />,
+        },
+      ],
+    },
+    {
+      name: "heros",
+      type: "dropdown",
+      components: [
+        {
+          name: "hero 1",
+          type: "component",
+          component: <Hero1 />,
+        },
+        {
+          name: "hero 2",
+          type: "component",
+          component: <Hero2 />,
+        },
+        {
+          name: "hero 3",
+          type: "component",
+          component: <Hero3 />,
+        },
+        {
+          name: "hero 4",
+          type: "component",
+          component: <Hero4 />,
+        },
+        {
+          name: "hero 5",
+          type: "component",
+          component: <Hero5 />,
+        },
+        {
+          name: "hero 6",
+          type: "component",
+          component: <Hero6 />,
+        },
+        {
+          name: "hero 7",
+          type: "component",
+          component: <Hero7 />,
+        },
+        {
+          name: "hero 8",
+          type: "component",
+          component: <Hero8 />,
+        },
+        {
+          name: "hero 9",
+          type: "component",
+          component: <Hero9 />,
+        },
+        {
+          name: "hero 10",
+          type: "component",
+          component: <Hero10 />,
+        },
+        {
+          name: "hero 11",
+          type: "component",
+          component: <Hero11 />,
+        },
+        {
+          name: "hero 12",
+          type: "component",
+          component: <Hero12 />,
+        },
+        {
+          name: "hero 13",
+          type: "component",
+          component: <Hero13 />,
+        },
+        {
+          name: "hero 14",
+          type: "component",
+          component: <Hero14 />,
+        },
+        {
+          name: "hero 15",
+          type: "component",
+          component: <Hero15 />,
         },
       ],
     },
@@ -181,6 +288,16 @@ const ComponentsWrapper = () => {
           name: "Center Content 9",
           type: "component",
           component: <CenterContent9 />,
+        },
+        {
+          name: "Center Content 10",
+          type: "component",
+          component: <CenterContent10 />,
+        },
+        {
+          name: "Center Content 12",
+          type: "component",
+          component: <CenterContent12 />,
         },
       ],
     },
@@ -543,6 +660,47 @@ const ComponentsWrapper = () => {
           type: "component",
           component: <Clients6 />,
         },
+        {
+          name: "Clients 7",
+          type: "component",
+          component: <Clients7 />,
+        },
+        {
+          name: "Clients 8",
+          type: "component",
+          component: <Clients8 />,
+        },
+        {
+          name: "Clients 9",
+          type: "component",
+          component: <Clients9 />,
+        },
+        {
+          name: "Clients 13",
+          type: "component",
+          component: <Clients13 />,
+        },
+        {
+          name: "Clients 14",
+          type: "component",
+          component: <Clients14 />,
+        },
+      ],
+    },
+    {
+      name: "Footer",
+      type: "dropdown",
+      components: [
+        {
+          name: "Footer 1",
+          type: "component",
+          component: <Footer1 />,
+        },
+        {
+          name: "Footer 2",
+          type: "component",
+          component: <Footer2 />,
+        },
       ],
     },
   ];
@@ -551,10 +709,14 @@ const ComponentsWrapper = () => {
   const [selectedComponentName, setSelectedComponentName] = useState(null);
   const [collapsed, setCollapsed] = useState({
     navbars: true,
+    heros: true,
     "center contents": true,
     "left contents": true,
     "Right contents": true,
     "Feature Contents": true,
+    FAQs: true,
+    Clients: true,
+    "Call to actions": true,
   });
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -595,7 +757,7 @@ const ComponentsWrapper = () => {
       <div>{selectedComponent}</div>
       <SecondaryButton
         className={`fixed ${
-          isNavOpen ? "right-60" : "right-2"
+          isNavOpen ? "right-60" : "right-0"
         } top-[30%] rounded-r-none z-30`}
         onPress={() => {
           setIsNavOpen((prev) => !prev);
@@ -608,7 +770,7 @@ const ComponentsWrapper = () => {
         )}
       </SecondaryButton>
       <div
-        className={`fixed w-60 top-0 right-0 border-l border-[#f0f0f0] dark:border-[#252528] bg-white dark:bg-black p-2 h-screen overflow-y-auto pt-16 ${
+        className={`fixed w-60 top-0 right-0 border-l border-[#f0f0f0] dark:border-[#252528] bg-white dark:bg-black p-2 h-screen overflow-y-auto pt-16 z-30 ${
           isNavOpen ? " right-0" : " right-[-100%]"
         } transition-all`}
       >
@@ -621,7 +783,12 @@ const ComponentsWrapper = () => {
                     className="w-full justify-between "
                     onPress={() => toggleCollapse(comp.name)}
                   >
-                    {comp.name} <Down className="size-6" />
+                    {comp.name}{" "}
+                    <Down
+                      className={`size-6 transition-transform ${
+                        !collapsed[comp.name] && "rotate-180"
+                      }`}
+                    />
                   </SecondaryButton>
                   {!collapsed[comp.name] && (
                     <ul className="space-y-2 ml-4 mt-2">

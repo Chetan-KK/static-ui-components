@@ -73,9 +73,9 @@ const FeatureContent11 = () => {
   return (
     <div className="py-10">
       <div className="container mx-auto px-5">
-        <h1 className="text-xl sm:text-3xl font-bold mb-5">
+        <div className="text-xl sm:text-3xl font-bold mb-5">
           What is Lorem Ipsum?
-        </h1>
+        </div>
         <div className="flex items-start gap-4 sm:items-center justify-between flex-col sm:flex-row">
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Neque porro quisquam est qui dolorem
@@ -95,7 +95,7 @@ const FeatureContent11 = () => {
               alt=""
             />
             <div className="p-3 space-y-1">
-              <h1 className="text-base sm:text-xl font-bold">Lorem Ipsum</h1>
+              <div className="text-base sm:text-xl font-bold">Lorem Ipsum</div>
               <p className="pb-4 text-sm sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
                 Neque porro quisquam est qui dolorem
               </p>

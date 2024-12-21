@@ -53,7 +53,9 @@ const FeatureContent3 = () => {
             className="flex flex-col gap-3 text-center items-center justify-center"
           >
             <CircleIcon size={35} Icon={content.Icon} color="darkblue" />
-            <h1 className="text-lg sm:text-2xl font-bold">{content.heading}</h1>
+            <div className="text-lg sm:text-2xl font-bold">
+              {content.heading}
+            </div>
           </div>
         ))}
       </div>

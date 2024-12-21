@@ -55,7 +55,7 @@ const LeftContent4 = () => {
                 aria-label="Menu"
               />
               <div>
-                <h1 className="font-bold  sm:text-xl">{content.title}</h1>
+                <div className="font-bold  sm:text-xl">{content.title}</div>
                 <p className="text-[#4d4d4d] text-xs sm:text-base dark:text-[#ababab]">
                   {content.description}
                 </p>

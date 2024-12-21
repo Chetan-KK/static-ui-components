@@ -10,9 +10,9 @@ const LeftContent8 = () => {
   return (
     <div className="lg:container mx-auto p-2 my-7 md:px-20 md:my-16 grid grid-cols-1 md:grid-cols-[1fr_auto] items-center justify-items-center md:justify-items-end gap-5">
       <div className="w-[90vw] xl:mx-20 space-y-5  sm:w-auto">
-        <h1 className=" text-xl sm:text-3xl font-bold">
+        <div className=" text-xl sm:text-3xl font-bold">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </h1>
+        </div>
         <div className="flex gap-2">
           <div className="space-y-2">
             <CircleIcon Icon={Sun} />

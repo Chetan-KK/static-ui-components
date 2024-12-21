@@ -12,6 +12,7 @@ const CallToAction3 = () => {
             className={"!p-0 !text-left !my-2 text-white"}
             heading={"Etiam nulla lectus amet nunc molestie at vulputate."}
             subHeading={"Neque, pulvinar vestibulum non aliquam."}
+            subHeadingClassName={"!text-white"}
           />
           <Button color={"dark"} className={"!text-[#005cf0] mt-5 !bg-white"}>
             Get free quotes <Down className="size-5 sm:size-7 -rotate-90" />

@@ -1,8 +1,8 @@
 import React from "react";
-import SectionHeading from "../utils/SectionHeading";
 import Button from "../utils/Button";
 import InputField from "../utils/InputField";
 import Sun from "../../assets/icons/Sun";
+import SectionHeading from "../utils/SectionHeading";
 
 const CallToAction5 = () => {
   return (

@@ -11,9 +11,9 @@ const CenterContent9 = () => {
           alt=""
         />
         <div>
-          <h1 className="font-bold text-xl mb-3 sm:mb-5">
+          <div className="font-bold text-xl mb-3 sm:mb-5">
             Choose language, emotion
-          </h1>
+          </div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Select the language and desired emotion. Click on Generate.
           </p>
@@ -24,7 +24,7 @@ const CenterContent9 = () => {
           alt=""
         />
         <div>
-          <h1 className="font-bold text-xl mb-3 sm:mb-5">Download File</h1>
+          <div className="font-bold text-xl mb-3 sm:mb-5">Download File</div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Download the generated audio; stream it directly as MP3 or WAV, and
             export it as other formats.
@@ -51,9 +51,9 @@ const CenterContent9 = () => {
       </svg>
       <div className="max-w-72 md:max-w-96 space-y-14">
         <div>
-          <h1 className="font-bold text-xl mb-3 sm:mb-5">
+          <div className="font-bold text-xl mb-3 sm:mb-5">
             Enter Prompt or Upload script
-          </h1>
+          </div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Type in, paste, or upload texts or scripts to convert to speech.
           </p>
@@ -64,7 +64,7 @@ const CenterContent9 = () => {
           alt=""
         />
         <div>
-          <h1 className="font-bold text-xl mb-3 sm:mb-5">Do Customization</h1>
+          <div className="font-bold text-xl mb-3 sm:mb-5">Do Customization</div>
           <p className="text-[#4d4d4d] dark:text-[#ababab] text-sm sm:text-base">
             Wait for AI voices to get ready. Edit them, fine-tune origins, and
             customise narration speed.

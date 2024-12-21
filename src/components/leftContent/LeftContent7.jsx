@@ -6,9 +6,9 @@ const LeftContent7 = () => {
     <div className="lg:container mx-auto p-4 my-7 md:px-20 md:my-16 grid grid-cols-1 md:grid-cols-[1fr_auto] items-center justify-items-center md:justify-items-end gap-5">
       <div className="w-[90vw] space-y-5  sm:w-auto">
         <h5 className="text-[#005cf0] font-bold uppercase">Caption</h5>
-        <h1 className=" text-xl sm:text-3xl font-bold">
+        <div className=" text-xl sm:text-3xl font-bold">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </h1>
+        </div>
         <p className=" text-xs sm:text-base text-[#4d4d4d] dark:text-[#ababab]">
           Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit
           nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.

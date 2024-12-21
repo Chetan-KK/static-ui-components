@@ -13,6 +13,7 @@ const CallToAction4 = () => {
             className={"!p-0 !text-left !my-2 text-white"}
             heading={"Etiam nulla lectus amet nunc molestie at vulputate."}
             subHeading={"Neque, pulvinar vestibulum non aliquam."}
+            subHeadingClassName={"!text-white"}
           />
           <div className="mt-5 flex flex-wrap gap-4">
             <Button color={"dark"} className={"!text-[#005cf0] !bg-white"}>
