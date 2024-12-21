@@ -108,7 +108,7 @@ import Clients14 from "./Clients/Clients14";
 import Clients13 from "./Clients/Clients13";
 import Clients8 from "./Clients/Clients8";
 import Clients9 from "./Clients/Clients9";
-import Footer1 from "./footer/footer1";
+import Footer1 from "./footer/Footer1";
 import Footer2 from "./footer/Footer2";
 
 const ComponentsWrapper = () => {
